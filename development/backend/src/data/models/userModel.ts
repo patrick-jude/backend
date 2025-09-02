@@ -9,7 +9,7 @@ interface UserAttributes {
   lastName: string;
   address: string;
   gender: string;
-  age: number;
+  dateOfBirth: Date;
   email: string;
 }
 
@@ -25,7 +25,7 @@ export class User extends Model<UserAttributes, UserCreationAttributes> implemen
   public lastName!: string;
   public address!: string;
   public gender!: string;
-  public age!: number;
+  public dateOfBirth!: Date;
   public email!: string;
 
   // Timestamps (Sequelize automatically adds createdAt and updatedAt)
@@ -67,8 +67,8 @@ export const defineUserModel = (sequelize: Sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      age: {
-        type: DataTypes.INTEGER,
+      dateOfBirth: {
+        type: DataTypes.DATE,
         allowNull: false,
       },
       email: {

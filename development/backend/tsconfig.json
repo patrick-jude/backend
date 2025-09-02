@@ -2,12 +2,12 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    "rootDir": "./src",
+    "rootDir": ".",
     "outDir": "./dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
+    "module": "esnext", 
     "target": "es2022",
     "types": ["jest", "node", "pg",],
     // For nodejs:
@@ -45,6 +45,6 @@
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],             /* Specify files to include in compilation. */
+  "include": ["src/**/*", "test/**/*"],             /* Specify files to include in compilation. */
   "exclude": ["node_modules", "dist"] /* Specify files to exclude from compilation. */ 
 }

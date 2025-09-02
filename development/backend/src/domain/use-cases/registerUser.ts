@@ -13,7 +13,7 @@ interface RegisterUserParams {
   lastName: string;
   address: string;
   gender: string;
-  age: number;
+  dateOfBirth: Date;
   email: string;
 }
 
@@ -52,7 +52,7 @@ export class RegisterUser {
       lastName: params.lastName,
       address: params.address,
       gender: params.gender,
-      age: params.age,
+      dateOfBirth: params.dateOfBirth,
       email: params.email,
     };
 

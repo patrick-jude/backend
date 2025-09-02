@@ -8,7 +8,7 @@ export interface RegisterRequestDTO {
   lastName: string;
   address: string;
   gender: string;
-  age: number;
+  dateOfBirth: Date;
   email: string;
 }
 

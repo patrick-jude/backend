@@ -7,7 +7,7 @@ export interface UserEntity {
   lastName: string;
   address: string;
   gender: string;
-  age: number;
+  dateOfBirth: Date;
   email: string;
   // Add any other fields that are part of the core user data
 }

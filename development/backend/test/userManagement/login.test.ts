@@ -10,7 +10,7 @@ const testUser = {
   lastName: 'Test',
   address: '202 Login St',
   gender: 'Female',
-  age: 28,
+  dateOfBirth: new Date('2025-08-28T10:00:00Z'),
   email: 'login.test@example.com',
 };
 

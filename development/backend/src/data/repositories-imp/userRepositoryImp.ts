@@ -67,7 +67,7 @@ export class UserRepositoryImpl implements UserRepository {
       lastName: rawData.lastName,
       address: rawData.address,
       gender: rawData.gender,
-      age: rawData.age,
+      dateOfBirth: rawData.dateOfBirth,
       email: rawData.email,
     };
     console.log('DEBUG (UserRepository): toEntity - Converted UserModel to UserEntity:', entity);

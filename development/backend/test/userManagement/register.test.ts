@@ -11,7 +11,7 @@ const testUser = {
   lastName: 'Test',
   address: '101 Register St',
   gender: 'Male',
-  age: 30,
+  daeOfBirth: new Date (1997,10,19),
   email: 'register.test@example.com',
 };
 
